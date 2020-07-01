@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="448.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="98.0" prefWidth="448.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="170.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погодник">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="city" layoutX="150.0" layoutY="132.0" promptText="Название Города" />
+      <Button fx:id="getData" layoutX="178.0" layoutY="192.0" mnemonicParsing="false" text="Узнать погоду" />
+      <Text fill="RED" layoutX="14.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация" wrappingWidth="169.0263671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_info" fill="RED" layoutX="14.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура: " wrappingWidth="169.0263671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_people" fill="RED" layoutX="14.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается : " wrappingWidth="169.0263671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_max" fill="RED" layoutX="14.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максиум: " wrappingWidth="169.0263671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_min" fill="RED" layoutX="8.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Миниум:  " wrappingWidth="169.0263671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_pass" fill="RED" layoutX="8.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:" wrappingWidth="169.0263671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
